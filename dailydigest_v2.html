@@ -37,9 +37,11 @@
     </header>
     
     <div class="container mx-auto px-4 py-8">
-        <main>
-            <article class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-                <img src="https://raw.githubusercontent.com/Ishtudd/DailyDigest_v1/main/kolkata_case_image.png" alt="News story image" class="w-full h-64 object-cover">
+        <main class="space-y-12">
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="p-4 bg-white">
+                    <img src="https://raw.githubusercontent.com/Ishtudd/DailyDigest_v1/main/kolkata_case_image.png" alt="News story image" class="w-full h-64 object-cover border-4 border-white shadow-md">
+                </div>
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-primary-900 mb-3">Kolkata rape and murder case</h2>
                     <p class="text-primary-800 mb-4">Doctors continue protests, reject Bengal government call for talks. "We want to keep all channels for negotiations and talks open. But the way they wrote the email and the language they used was an insult to us" -doctors.</p>
@@ -48,13 +50,15 @@
                             <h3 class="font-semibold text-green-800 mb-2">Perspective 1:</h3>
                             <p class="text-green-700 mb-2">Protesting junior doctors turn down govt invite for talks."Justice will not come easily. We have to fight for it. This will not be possible without everyone's support," he was quoted as saying by TOI.</p>
                             <div class="flex items-center justify-between">
-                                <div>
-                                    <button class="text-green-600 hover:text-green-800 transition-colors duration-200">
-                                        <i class="far fa-heart mr-1"></i> Like
+                                <div class="flex items-center space-x-4">
+                                    <button class="text-green-600 hover:text-green-800 transition-colors duration-200 flex items-center">
+                                        <i class="far fa-heart mr-1"></i> <span class="likes-count">0</span>
                                     </button>
-                                    <span class="text-green-600 ml-2">0 likes</span>
+                                    <button class="text-green-600 hover:text-green-800 transition-colors duration-200">
+                                        <i class="far fa-comment"></i>
+                                    </button>
                                 </div>
-                                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+                                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-2 rounded text-sm">
                                     Show Source
                                 </button>
                             </div>
@@ -64,23 +68,41 @@
                             <p class="text-orange-700 mb-2">The chief minister said she would abide by the Calcutta High Court's order and extend all support to the CBI. "We have no problem with CBI being handed over the case as we want it solved at the earliest."
 Bharatiya Janata Party national spokesperson Shehzad Poonawala slammed the TMC government and said, "What has happened in West Bengal under the watch of Mamata Banerjee and the TMC government is nothing short of Nirbhaya Part 2. It is evident now that this was not a rape, it was a gang rape. The evidence indicates that.</p>
                             <div class="flex items-center justify-between">
-                                <div>
-                                    <button class="text-orange-600 hover:text-orange-800 transition-colors duration-200">
-                                        <i class="far fa-heart mr-1"></i> Like
+                                <div class="flex items-center space-x-4">
+                                    <button class="text-orange-600 hover:text-orange-800 transition-colors duration-200 flex items-center">
+                                        <i class="far fa-heart mr-1"></i> <span class="likes-count">0</span>
                                     </button>
-                                    <span class="text-orange-600 ml-2">0 likes</span>
+                                    <button class="text-orange-600 hover:text-orange-800 transition-colors duration-200">
+                                        <i class="far fa-comment"></i>
+                                    </button>
                                 </div>
-                                <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
+                                <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-1 px-2 rounded text-sm">
                                     Show Source
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="bg-white p-4 flex justify-center space-x-12">
+                    <div class="text-center">
+                        <button class="text-primary-600 hover:text-primary-800 transition-colors duration-200">
+                            <i class="fas fa-share-alt text-2xl"></i>
+                        </button>
+                        <p class="text-xs mt-1">Share</p>
+                    </div>
+                    <div class="text-center">
+                        <button class="text-primary-600 hover:text-primary-800 transition-colors duration-200">
+                            <i class="far fa-bookmark text-2xl"></i>
+                        </button>
+                        <p class="text-xs mt-1">Save</p>
+                    </div>
+                </div>
             </article>
             
-            <article class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-                <img src="https://raw.githubusercontent.com/Ishtudd/DailyDigest_v1/main/zakir_image.png" alt="News story image" class="w-full h-64 object-cover">
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="p-4 bg-white">
+                    <img src="https://raw.githubusercontent.com/Ishtudd/DailyDigest_v1/main/zakir_image.png" alt="News story image" class="w-full h-64 object-cover border-4 border-white shadow-md">
+                </div>
                 <div class="p-6">
                     <h2 class="text-2xl font-bold text-primary-900 mb-3">Waqf board controversy</h2>
                     <p class="text-primary-800 mb-4">"Save Indian Waqf Properties, Reject The Waqf Amendment Bill! Let's stand together to defend the sanctity of Waqf and ensure its preservation for future generations," Naik tweeted.</p>
@@ -89,13 +111,15 @@ Bharatiya Janata Party national spokesperson Shehzad Poonawala slammed the TMC g
                             <h3 class="font-semibold text-green-800 mb-2">Perspective 1:</h3>
                             <p class="text-green-700 mb-2">This is an urgent call to the Muslims in India to stop this evil which breaches the sacred status of waqf, and has evil repercussions on the future of Islaamic institutions. We will bear Allah's wrath and the curse of subsequent generations, if we allow this bill to pass. Stop the evil or bear its liabilities in this life and in the Hereafter! Say no to the Waqf Amendment Bill!</p>
                             <div class="flex items-center justify-between">
-                                <div>
-                                    <button class="text-green-600 hover:text-green-800 transition-colors duration-200">
-                                        <i class="far fa-heart mr-1"></i> Like
+                                <div class="flex items-center space-x-4">
+                                    <button class="text-green-600 hover:text-green-800 transition-colors duration-200 flex items-center">
+                                        <i class="far fa-heart mr-1"></i> <span class="likes-count">0</span>
                                     </button>
-                                    <span class="text-green-600 ml-2">0 likes</span>
+                                    <button class="text-green-600 hover:text-green-800 transition-colors duration-200">
+                                        <i class="far fa-comment"></i>
+                                    </button>
                                 </div>
-                                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+                                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-2 rounded text-sm">
                                     Show Source
                                 </button>
                             </div>
@@ -104,17 +128,33 @@ Bharatiya Janata Party national spokesperson Shehzad Poonawala slammed the TMC g
                             <h3 class="font-semibold text-orange-800 mb-2">Perspective 2:</h3>
                             <p class="text-orange-700 mb-2">Waqf Board is a name on which controversy and discussions are going on... many such cases have come to light. Where the Waqf Board suddenly claimed someone else's land that was hundreds of years old and the real owner of that land did not get justice. Regarding all these controversies and demands, the Modi government had presented the Waqf Amendment Bill during the monsoon session of the Parliament, but after huge opposition, it has now been sent to the JPC. Just now this issue was being discussed in JPC when a statement has again flared up this issue... and the statement has come from thousands of kilometers away... from where India's fugitive Zakir Naik is trying to instigate people.</p>
                             <div class="flex items-center justify-between">
-                                <div>
-                                    <button class="text-orange-600 hover:text-orange-800 transition-colors duration-200">
-                                        <i class="far fa-heart mr-1"></i> Like
+                                <div class="flex items-center space-x-4">
+                                    <button class="text-orange-600 hover:text-orange-800 transition-colors duration-200 flex items-center">
+                                        <i class="far fa-heart mr-1"></i> <span class="likes-count">0</span>
                                     </button>
-                                    <span class="text-orange-600 ml-2">0 likes</span>
+                                    <button class="text-orange-600 hover:text-orange-800 transition-colors duration-200">
+                                        <i class="far fa-comment"></i>
+                                    </button>
                                 </div>
-                                <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
+                                <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-1 px-2 rounded text-sm">
                                     Show Source
                                 </button>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 flex justify-center space-x-12">
+                    <div class="text-center">
+                        <button class="text-primary-600 hover:text-primary-800 transition-colors duration-200">
+                            <i class="fas fa-share-alt text-2xl"></i>
+                        </button>
+                        <p class="text-xs mt-1">Share</p>
+                    </div>
+                    <div class="text-center">
+                        <button class="text-primary-600 hover:text-primary-800 transition-colors duration-200">
+                            <i class="far fa-bookmark text-2xl"></i>
+                        </button>
+                        <p class="text-xs mt-1">Save</p>
                     </div>
                 </div>
             </article>
@@ -123,13 +163,14 @@ Bharatiya Janata Party national spokesperson Shehzad Poonawala slammed the TMC g
     
     <script>
     document.querySelectorAll('button').forEach(button => {
-        if (button.textContent.trim() === 'Like') {
+        if (button.querySelector('.fa-heart')) {
             let likes = 0;
             button.addEventListener('click', () => {
                 likes++;
-                const likeCount = button.nextElementSibling;
-                likeCount.textContent = likes === 1 ? '1 like' : likes + ' likes';
-                button.innerHTML = '<i class="fas fa-heart mr-1"></i> Liked';
+                const likesCount = button.querySelector('.likes-count');
+                likesCount.textContent = likes;
+                button.querySelector('i').classList.remove('far');
+                button.querySelector('i').classList.add('fas');
                 button.classList.add('text-red-500');
             });
         } else if (button.textContent.trim() === 'Show Source') {
