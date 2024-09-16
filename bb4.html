@@ -6,7 +6,7 @@
     <title>Bipolar Bharat</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -32,23 +32,39 @@
                     },
                     fontFamily: {
                         'sans': ['Roboto', 'sans-serif'],
-                        'serif': ['Playfair Display', 'serif'],
+                        'serif': ['Montserrat', 'sans-serif'],
                     },
                     fontSize: {
                         '3xl': '1.875rem',
                         '4xl': '2.25rem',
+                        '5xl': '3rem',
+                        '6xl': '3.75rem',
                     }
                 },
             },
         }
     </script>
+    <style>
+        .texture {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+        }
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: -1px;
+            background: linear-gradient(45deg, #DC2626, #FF6B6B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body class="bg-gray-100 font-sans">
     <!-- Navigation bar -->
     <nav class="bg-white shadow-md fixed w-full z-10 top-0">
         <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <a href="#" class="text-4xl font-serif font-bold text-red-600" style="font-size: 2.36rem;">Bipolar Bharat</a>
+            <div class="flex justify-between items-center py-6">
+                <a href="#" class="text-4xl sm:text-5xl md:text-6xl logo">Bipolar Bharat</a>
                 <ul class="hidden md:flex space-x-8">
                     <li><a href="#" class="text-gray-700 hover:text-red-600 transition-colors duration-200">Home</a></li>
                     <li><a href="#" class="text-gray-700 hover:text-red-600 transition-colors duration-200">About</a></li>
@@ -61,10 +77,10 @@
         </div>
     </nav>
     
-    <!-- Red banner -->
-    <div class="bg-red-600 mt-20">
-        <div class="container mx-auto px-4">
-            <ul class="flex justify-center space-x-8 py-2">
+    <!-- Red banner with texture -->
+    <div class="bg-red-600 texture mt-24 sm:mt-28 md:mt-32">
+        <div class="container mx-auto px-4 overflow-x-auto">
+            <ul class="flex justify-start md:justify-center space-x-4 sm:space-x-8 py-2 whitespace-nowrap">
                 <li><a href="#" class="text-white hover:text-gray-200 transition-colors duration-200">Politics</a></li>
                 <li><a href="#" class="text-white hover:text-gray-200 transition-colors duration-200">Crime</a></li>
                 <li><a href="#" class="text-white hover:text-gray-200 transition-colors duration-200">International</a></li>
@@ -80,9 +96,9 @@
             <!-- First article with polls -->
             <article class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border border-gray-200">
                 <div class="md:flex">
-                    <div class="md:w-2/5 relative">
-                        <img src="https://raw.githubusercontent.com/Ishtudd/DailyDigest_v1/main/kolkata_case_image.png" alt="News story image" class="w-full h-full object-cover">
-                        <p class="absolute top-4 right-4 bg-white text-red-600 font-mono text-sm px-2 py-1 rounded">September 14, 2024</p>
+                    <div class="md:w-2/5 relative p-2 bg-white">
+                        <img src="https://raw.githubusercontent.com/Ishtudd/DailyDigest_v1/main/kolkata_case_image.png" alt="News story image" class="w-full h-full object-cover border-4 border-white shadow-lg">
+                        <p class="absolute bottom-6 right-6 bg-white text-red-600 font-mono text-sm px-2 py-1 rounded shadow">September 14, 2024</p>
                     </div>
                     <div class="md:w-3/5 p-8">
                         <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">Crime</span>
@@ -145,9 +161,9 @@
             <!-- Second article with polls -->
             <article class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border border-gray-200">
                 <div class="md:flex">
-                    <div class="md:w-2/5 relative">
-                        <img src="https://raw.githubusercontent.com/Ishtudd/DailyDigest_v1/main/zakir_image.png" alt="News story image" class="w-full h-full object-cover">
-                        <p class="absolute top-4 right-4 bg-white text-red-600 font-mono text-sm px-2 py-1 rounded">September 14, 2024</p>
+                    <div class="md:w-2/5 relative p-2 bg-white">
+                        <img src="https://raw.githubusercontent.com/Ishtudd/DailyDigest_v1/main/zakir_image.png" alt="News story image" class="w-full h-full object-cover border-4 border-white shadow-lg">
+                        <p class="absolute bottom-6 right-6 bg-white text-red-600 font-mono text-sm px-2 py-1 rounded shadow">September 14, 2024</p>
                     </div>
                     <div class="md:w-3/5 p-8">
                         <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">Politics</span>
@@ -191,19 +207,4 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Blue Share and Save buttons centered -->
-                        <div class="mt-6 flex justify-center space-x-4">
-                            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors duration-200 flex items-center">
-                                <i class="fas fa-share-alt mr-2"></i> Share
-                            </button>
-                            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors duration-200 flex items-center">
-                                <i class="fas fa-save mr-2"></i> Save
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </main>
-    </div>
-</body>
-</html>
+                        <!-- Blue
