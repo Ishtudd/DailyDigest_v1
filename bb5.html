@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bipolar Bharat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        red: {
+                            600: '#DC2626',
+                        },
+                        teal: {
+                            100: '#E6FFFA',
+                            600: '#319795',
+                            800: '#285E61',
+                        },
+                        coral: {
+                            100: '#FFFAF0',
+                            600: '#DD6B20',
+                            800: '#9C4221',
+                        },
+                        blue: {
+                            600: '#2563EB',
+                            700: '#1D4ED8',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                        'serif': ['Montserrat', 'sans-serif'],
+                    },
+                    fontSize: {
+                        '3xl': '1.875rem',
+                        '4xl': '2.25rem',
+                        '5xl': '3rem',
+                        '6xl': '3.75rem',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .texture {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+        }
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: -1px;
+            background: linear-gradient(45deg, #DC2626, #FF6B6B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation bar -->
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-6">
+                <a href="#" class="text-4xl sm:text-5xl md:text-6xl logo">Bipolar Bharat</a>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#" class="text-gray-700 hover:text-red-600 transition-colors duration-200">Home</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-red-600 transition-colors duration-200">About</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-red-600 transition-colors duration-200">Contact</a></li>
+                </ul>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Red banner with texture -->
+    <div class="bg-red-600 texture mt-24 sm:mt-28 md:mt-32">
+        <div class="container mx-auto px-4 overflow-x-auto">
+            <ul class="flex justify-start md:justify-center space-x-4 sm:space-x-8 py-2 whitespace-nowrap">
+                <li><a href="#" class="text-white hover:text-gray-200 transition-colors duration-200">Politics</a></li>
+                <li><a href="#" class="text-white hover:text-gray-200 transition-colors duration-200">Crime</a></li>
+                <li><a href="#" class="text-white hover:text-gray-200 transition-colors duration-200">International</a></li>
+                <li><a href="#" class="text-white hover:text-gray-200 transition-colors duration-200">Trending</a></li>
+                <li><a href="#" class="text-white hover:text-gray-200 transition-colors duration-200">Geopolitics</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Main content area -->
+    <div class="container mx-auto px-4 py-8">
+        <main class="space-y-16">
+            <!-- First article with polls -->
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border border-gray-200">
+                <div class="md:flex">
+                    <div class="md:w-2/5 relative p-2 bg-white">
+                        <img src="https://raw.githubusercontent.com/Ishtudd/DailyDigest_v1/main/kolkata_case_image.png" alt="News story image" class="w-full h-full object-cover border-4 border-white shadow-lg">
+                        <p class="absolute bottom-6 right-6 bg-white text-red-600 font-mono text-sm px-2 py-1 rounded shadow">September 14, 2024</p>
+                    </div>
+                    <div class="md:w-3/5 p-8">
+                        <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">Crime</span>
+                        <h2 class="text-3xl font-serif font-bold text-gray-900 mb-4">Kolkata rape and murder case</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">Doctors continue protests, reject Bengal government call for talks. "We want to keep all channels for negotiations and talks open. But the way they wrote the email and the language they used was an insult to us" - doctors.</p>
+                        <div class="space-y-6">
+                            <!-- Poll 1 -->
+                            <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+                                <h3 class="font-semibold text-red-600 mb-3 text-lg">Poll 1:</h3>
+                                <p class="text-red-600 mb-4 leading-relaxed">Protesting junior doctors turn down govt invite for talks. "Justice will not come easily. We have to fight for it. This will not be possible without everyone's support," he was quoted as saying by TOI.</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4">
+                                        <button class="text-red-600 hover:text-red-800 transition-colors duration-200 flex items-center">
+                                            <i class="fas fa-arrow-up mr-2"></i> <span class="likes-count">0</span>
+                                        </button>
+                                        <button class="text-red-600 hover:text-red-800 transition-colors duration-200">
+                                            <i class="far fa-comment"></i>
+                                        </button>
+                                    </div>
+                                    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors duration-200">
+                                        Show Source
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Poll 2 -->
+                            <div class="bg-red-600 p-6 rounded-lg border-l-4 border-white">
+                                <h3 class="font-semibold text-white mb-3 text-lg">Poll 2:</h3>
+                                <p class="text-white mb-4 leading-relaxed">The chief minister said she would abide by the Calcutta High Court's order and extend all support to the CBI. "We have no problem with CBI being handed over the case as we want it solved at the earliest."</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4">
+                                        <button class="text-white hover:text-gray-200 transition-colors duration-200 flex items-center">
+                                            <i class="fas fa-arrow-up mr-2"></i> <span class="likes-count">0</span>
+                                        </button>
+                                        <button class="text-white hover:text-gray-200 transition-colors duration-200">
+                                            <i class="far fa-comment"></i>
+                                        </button>
+                                    </div>
+                                    <button class="bg-white hover:bg-gray-100 text-red-600 font-bold py-2 px-4 rounded text-sm transition-colors duration-200">
+                                        Show Source
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blue Share and Save buttons centered -->
+                        <div class="mt-6 flex justify-center space-x-4">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors duration-200 flex items-center">
+                                <i class="fas fa-share-alt mr-2"></i> Share
+                            </button>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors duration-200 flex items-center">
+                                <i class="fas fa-save mr-2"></i> Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Separation between articles -->
+            <hr class="my-12 border-gray-300">
+
+            <!-- Second article with polls -->
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border border-gray-200">
+                <div class="md:flex">
+                    <div class="md:w-2/5 relative p-2 bg-white">
+                        <img src="https://raw.githubusercontent.com/Ishtudd/DailyDigest_v1/main/zakir_image.png" alt="News story image" class="w-full h-full object-cover border-4 border-white shadow-lg">
+                        <p class="absolute bottom-6 right-6 bg-white text-red-600 font-mono text-sm px-2 py-1 rounded shadow">September 14, 2024</p>
+                    </div>
+                    <div class="md:w-3/5 p-8">
+                        <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">Politics</span>
+                        <h2 class="text-3xl font-serif font-bold text-gray-900 mb-4">Zakir Naik Controversy</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">The controversy surrounding Zakir Naik has resurfaced as multiple nations have raised concerns about his speeches and influence. Should India push for his extradition?</p>
+                        <div class="space-y-6">
+                            <!-- Poll 1 -->
+                            <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+                                <h3 class="font-semibold text-red-600 mb-3 text-lg">Poll 1:</h3>
+                                <p class="text-red-600 mb-4 leading-relaxed">Critics argue that Naik's speeches incite hatred and religious intolerance. Should he be extradited to face charges in India?</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4">
+                                        <button class="text-red-600 hover:text-red-800 transition-colors duration-200 flex items-center">
+                                            <i class="fas fa-arrow-up mr-2"></i> <span class="likes-count">0</span>
+                                        </button>
+                                        <button class="text-red-600 hover:text-red-800 transition-colors duration-200">
+                                            <i class="far fa-comment"></i>
+                                        </button>
+                                    </div>
+                                    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors duration-200">
+                                        Show Source
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Poll 2 -->
+                            <div class="bg-red-600 p-6 rounded-lg border-l-4 border-white">
+                                <h3 class="font-semibold text-white mb-3 text-lg">Poll 2:</h3>
+                                <p class="text-white mb-4 leading-relaxed">Supporters argue that Naik's speeches are misinterpreted and that he promotes peace and religious tolerance. Should India focus on diplomatic means instead?</p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4">
+                                        <button class="text-white hover:text-gray-200 transition-colors duration-200 flex items-center">
+                                            <i class="fas fa-arrow-up mr-2"></i> <span class="likes-count">0</span>
+                                        </button>
+                                        <button class="text-white hover:text-gray-200 transition-colors duration-200">
+                                            <i class="far fa-comment"></i>
+                                        </button>
+                                    </div>
+                                    <button class="bg-white hover:bg-gray-100 text-red-600 font-bold py-2 px-4 rounded text-sm transition-colors duration-200">
+                                        Show Source
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blue Share and Save buttons centered -->
+                        <div class="mt-6 flex justify-center space-x-4">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors duration-200 flex items-center">
