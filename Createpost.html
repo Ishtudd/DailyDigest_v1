@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post - Bipolar Bharat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        red: {
+                            600: '#DC2626',
+                        },
+                    },
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                        'serif': ['Montserrat', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: -1px;
+            background: linear-gradient(45deg, #DC2626, #FF6B6B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="min-h-screen flex flex-col justify-center items-center">
+        <!-- Heading -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl logo mb-8">Create Post</h1>
+
+        <!-- Form Section -->
+        <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg">
+            <form action="#" method="POST">
+                <div class="space-y-6">
+                    <!-- Post Title -->
+                    <div>
+                        <label for="post-title" class="block text-gray-700 font-bold mb-2">Post Title</label>
+                        <input type="text" id="post-title" name="post-title" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    </div>
+                    
+                    <!-- Source Link 1 -->
+                    <div>
+                        <label for="source1" class="block text-gray-700 font-bold mb-2">Source Link 1</label>
+                        <input type="url" id="source1" name="source1" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    </div>
+
+                    <!-- Source Link 2 -->
+                    <div>
+                        <label for="source2" class="block text-gray-700 font-bold mb-2">Source Link 2</label>
+                        <input type="url" id="source2" name="source2" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    </div>
+
+                    <!-- Source Link 3 -->
+                    <div>
+                        <label for="source3" class="block text-gray-700 font-bold mb-2">Source Link 3</label>
+                        <input type="url" id="source3" name="source3" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    </div>
+
+                    <!-- Source Link 4 -->
+                    <div>
+                        <label for="source4" class="block text-gray-700 font-bold mb-2">Source Link 4</label>
+                        <input type="url" id="source4" name="source4" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    </div>
+
+                    <!-- Source Link 5 -->
+                    <div>
+                        <label for="source5" class="block text-gray-700 font-bold mb-2">Source Link 5</label>
+                        <input type="url" id="source5" name="source5" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="flex justify-center mt-6">
+                        <button type="submit" class="bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition duration-200">Submit Post</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
