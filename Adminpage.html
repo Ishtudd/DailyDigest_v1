@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Bipolar Bharat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        red: {
+                            600: '#DC2626',
+                        },
+                    },
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                        'serif': ['Montserrat', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: -1px;
+            background: linear-gradient(45deg, #DC2626, #FF6B6B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="min-h-screen flex flex-col justify-center items-center">
+        <!-- Heading -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl logo mb-8">Bipolar Bharat Admin Panel</h1>
+
+        <!-- Form Section -->
+        <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg">
+            <form action="#" method="POST">
+                <div class="space-y-6">
+                    <!-- Text Field 1 -->
+                    <div>
+                        <label for="title" class="block text-gray-700 font-bold mb-2">Title</label>
+                        <input type="text" id="title" name="title" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    </div>
+                    
+                    <!-- Text Field 2 -->
+                    <div>
+                        <label for="category" class="block text-gray-700 font-bold mb-2">Category</label>
+                        <input type="text" id="category" name="category" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    </div>
+
+                    <!-- Text Field 3 -->
+                    <div>
+                        <label for="content" class="block text-gray-700 font-bold mb-2">Content</label>
+                        <textarea id="content" name="content" rows="4" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"></textarea>
+                    </div>
+
+                    <!-- Text Field 4 -->
+                    <div>
+                        <label for="author" class="block text-gray-700 font-bold mb-2">Author</label>
+                        <input type="text" id="author" name="author" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="flex justify-center mt-6">
+                        <button type="submit" class="bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition duration-200">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
